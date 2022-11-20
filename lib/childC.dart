@@ -30,7 +30,7 @@ Widget childM1 = Container(
 // ландшафт
 Widget childC1 = Container(
     // ландшафт
-    width: 180.w,
+    width: 250.w,
     height: 100.h,
     color: Color.fromARGB(255, 11, 80, 13),
     child: Row(
@@ -40,10 +40,7 @@ Widget childC1 = Container(
           Padding(
             padding: EdgeInsets.symmetric(vertical: 1.h, horizontal: 1.h),
           ),
-          // SizedBox(
-          //     height: 80.h,
-          //     width: 50.w,
-          //     child:
+
           Image.asset(
             "assets/images/matrix.png",
             height: 120.h,

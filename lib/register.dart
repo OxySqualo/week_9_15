@@ -25,7 +25,6 @@ class _RegisterState extends State<Register> {
         centerTitle: true,
         title: Text(
           "Создать аккаунт",
-          style: TextStyle(fontSize: 10.sp),
         ),
       ),
       body: Center(

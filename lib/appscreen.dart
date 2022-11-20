@@ -9,13 +9,15 @@ class Appscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      persistentFooterAlignment: AlignmentDirectional.center,
-      appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 11, 80, 13),
-        centerTitle: true,
-        title: const Text("The Matrix"),
-      ),
-      body: SizerUtil.orientation == Orientation.portrait ? childM1 : childC1,
-    );
+        appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 11, 80, 13),
+          centerTitle: true,
+          title: const Text("The Matrix"),
+        ),
+        body: OrientationBuilder(builder: (context, orientation) {
+          return Container(
+            child: orientation == Orientation.portrait ? childM1 : childC1,
+          );
+        }));
   }
 }
