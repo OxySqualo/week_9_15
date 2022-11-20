@@ -48,8 +48,11 @@ class _ProfileState extends State<Profile> {
                           return null;
                         },
                         initialValue: login,
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'Логин',
+                          labelStyle: TextStyle(
+                            fontSize: 3.h,
+                          ),
                         ),
                         onChanged: (login) =>
                             setState(() => this.login = login),
@@ -63,8 +66,11 @@ class _ProfileState extends State<Profile> {
                           return null;
                         },
                         initialValue: username,
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'Имя',
+                          labelStyle: TextStyle(
+                            fontSize: 3.h,
+                          ),
                         ),
                         onChanged: (username) =>
                             setState(() => this.username = username),
@@ -78,14 +84,17 @@ class _ProfileState extends State<Profile> {
                           return null;
                         },
                         initialValue: userlastname,
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'Фамилия',
+                          labelStyle: TextStyle(
+                            fontSize: 3.h,
+                          ),
                         ),
                         onChanged: (userlastname) =>
                             setState(() => this.userlastname = userlastname),
                       ),
                       SizedBox(
-                        height: 2.h,
+                        height: 3.h,
                       ),
                       TextFormField(
                         validator: (value) {
@@ -93,8 +102,11 @@ class _ProfileState extends State<Profile> {
                           return null;
                         },
                         initialValue: login,
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'e-mail',
+                          labelStyle: TextStyle(
+                            fontSize: 3.h,
+                          ),
                         ),
                         onChanged: (email) =>
                             setState(() => this.email = email),
@@ -108,8 +120,11 @@ class _ProfileState extends State<Profile> {
                           return null;
                         },
                         initialValue: login,
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'Телефон',
+                          labelStyle: TextStyle(
+                            fontSize: 3.h,
+                          ),
                         ),
                         onChanged: (phone) =>
                             setState(() => this.phone = phone),
@@ -123,8 +138,11 @@ class _ProfileState extends State<Profile> {
                           return null;
                         },
                         initialValue: login,
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
                           labelText: 'Пароль',
+                          labelStyle: TextStyle(
+                            fontSize: 3.h,
+                          ),
                         ),
                         onChanged: (password) =>
                             setState(() => this.password = password),
@@ -145,7 +163,12 @@ class _ProfileState extends State<Profile> {
                           await UserPreferences().setPassword(password);
                           Navigator.of(context).pushNamed("/appscreen");
                         },
-                        child: const Text('Сохранить'),
+                        child: Text(
+                          'Сохранить',
+                          style: TextStyle(
+                            fontSize: 2.h,
+                          ),
+                        ),
                       ),
                     ]),
                   ),

@@ -78,7 +78,12 @@ class _RegisterState extends State<Register> {
                         onPressed: () {
                           Navigator.of(context).pushNamed("/profile");
                         },
-                        child: const Text('Сохранить'),
+                        child: Text(
+                          'Сохранить',
+                          style: TextStyle(
+                            fontSize: 2.h,
+                          ),
+                        ),
                       ),
                     ],
                   ),
