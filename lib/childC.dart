@@ -30,8 +30,8 @@ Widget childM1 = Container(
 // ландшафт
 Widget childC1 = Container(
     // ландшафт
-    width: 250.w,
-    height: 100.h,
+    width: 100.h,
+    height: 100.w,
     color: Color.fromARGB(255, 11, 80, 13),
     child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -60,3 +60,21 @@ Widget childC1 = Container(
             padding: EdgeInsets.symmetric(vertical: 1.h, horizontal: 1.h),
           ),
         ]));
+
+// import 'package:flutter/material.dart';
+// import 'package:sizer/sizer.dart';
+
+// Widget childM1 = Container(
+//   // портрет
+//   width: 100.w,
+//   height: 100.h,
+//   color: Color.fromARGB(255, 11, 80, 13),
+// );
+
+// // ландшафт
+// Widget childC1 = Container(
+//   // ландшафт
+//   width: 100.h,
+//   height: 100.w,
+//   color: Color.fromARGB(255, 11, 80, 13),
+// );
